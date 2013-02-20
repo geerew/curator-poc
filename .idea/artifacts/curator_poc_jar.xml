@@ -1,7 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="jar" name="curator-poc:jar">
+  <artifact type="jar" build-on-make="true" name="curator-poc:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/curator_poc_jar</output-path>
     <root id="archive" name="curator-poc.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+      </element>
       <element id="module-output" name="curator-poc" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/log4j/log4j/1.2.15/log4j-1.2.15.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar" path-in-jar="/" />
